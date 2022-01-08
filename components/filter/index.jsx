@@ -28,7 +28,7 @@ export default function Filter() {
 
   const createCategoriesItem = () => {
     return state.categories.map((item) => (
-      <MenuItem value={item.name.replaceAll(' ', '-')}>{item.name}</MenuItem>
+      <MenuItem value={item.name.replace(/ /g, '-')}>{item.name}</MenuItem>
     ))
   }
 

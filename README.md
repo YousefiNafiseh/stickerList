@@ -1,6 +1,11 @@
 # Getting Started with Create React App
 
-This project is for sticker list [Create React App](https://github.com/facebook/create-react-app).
+This project is for sticker list (https://github.com/facebook/create-react-app).
+
+## Usage
+
+```node 
+node >= 14.15.0
 
 ## Available Scripts
 

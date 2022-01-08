@@ -14,8 +14,8 @@ export default function Home(props) {
 
   function renderCategories(categories) {
     return categories.map(category => (
-      <Link href={`/category/${category.name.replace(' ', '-')}`}>
-        <Grid item xs={2} sm={4} md={4} key={category.id}>
+      <Link href={`/category/${category.name.replace(' ', '-')}`} key={category.id}>
+        <Grid item xs={2} sm={4} md={4}>
           <CardComponent sx={{ maxWidth: 345 }} >
             <CardActionArea>
               <CardMedia

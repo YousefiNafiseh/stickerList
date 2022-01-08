@@ -21,7 +21,7 @@ export const getData = async () => {
 
 export const filterData = (data, category, sort, page) => {
   if (!!category && category.length > 0) {
-    let key = `${category}`.toLowerCase().replaceAll('-', ' ');
+    let key = `${category}`.toLowerCase().replace(/-/g, ' ');
     data = data.filter(x => !!x.product_categories.find(item => item.name.toLowerCase() === key));
   }
   switch (sort) {
