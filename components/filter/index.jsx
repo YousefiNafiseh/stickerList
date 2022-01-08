@@ -28,13 +28,13 @@ export default function Filter() {
 
   const createCategoriesItem = () => {
     return state.categories.map((item) => (
-      <MenuItem value={item.name.replace(/ /g, '-')}>{item.name}</MenuItem>
+      <MenuItem value={item.name.replace(/ /g, '-')} key={item.id}>{item.name}</MenuItem>
     ))
   }
 
   const createSortItem = () => {
     return state.sorts.map((item) => (
-      <MenuItem value={item.name.replaceAll(' ', '-')}>{item.name}</MenuItem>
+      <MenuItem value={item.name.replace(/ /g, '-')} key={item.id}>{item.name}</MenuItem>
     ))
   }
 
@@ -45,7 +45,8 @@ export default function Filter() {
         <SelectComponent
           labelId='category-select-label'
           id='category-select'
-          value={router.query.category}
+          defaultValue = ''
+          value={router.query.category ?? ''}
           label='Category'
           onChange={setCategory}
         >
@@ -58,7 +59,8 @@ export default function Filter() {
         <Select
           labelId='sort-select-label'
           id='sort-select-label'
-          value={router.query.sort}
+          defaultValue= ''
+          value={router.query.sort ?? ''}
           label='sort'
           onChange={setSort}
         >

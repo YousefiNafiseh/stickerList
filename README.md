@@ -1,19 +1,31 @@
-# Getting Started with Create React App
+# StickerList
 
-This project is for sticker list (https://github.com/facebook/create-react-app).
+StickerList is a simple Nextjs app for filtering and sorting a list of stickers.
+
+## Requirement
+
+```bash
+node >= 14.15.0
+```
+
+## Installation
+
+```bash
+npm i
+```
 
 ## Usage
 
-```node 
-node >= 14.15.0
+for development
 
-## Available Scripts
+```bash
+npm run dev 
+```
 
-In the project directory, you can run:
+for production
 
-### `npm i`
-### `npm i react-hook-thunk-reducer --force`
-### `npm run dev`
+```bash
+npm run build
+npm run start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
